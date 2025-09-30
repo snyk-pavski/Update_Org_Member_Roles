@@ -54,7 +54,7 @@ This script updates the role for users in the specified organization based on th
 **Command:**
 
 
-`python update_snyk_roles.py --org <YOUR_ORG_ID> --token <YOUR_PAT_TOKEN> --role <CURRENT_ROLE_ID> ---new_role <NEW_ROLE_ID>`
+`python update_member_roles.py --org <YOUR_ORG_ID> --token <YOUR_PAT_TOKEN> --role <CURRENT_ROLE_ID> ---new_role <NEW_ROLE_ID>`
 
 
 * `--role`: The public ID of the role that needs updating.
