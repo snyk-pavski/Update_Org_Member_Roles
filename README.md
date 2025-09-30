@@ -49,17 +49,16 @@ user.two@example.com,xxx-xx-xx-xxx-xxx,Collaborator,xxx-xx-xx-xx-xx
 
 ### 2. Update member Roles
 
-This script updates the role for one or more users in a specified organization.
+This script updates the role for users in the specified organization based on the currently-assigned roles.
 
 **Command:**
 
 
-`python update_snyk_roles.py --org <YOUR_ORG_ID> --token <YOUR_PAT_TOKEN> --role <NEW_ROLE_ID> --users <USER_ID_1>,<USER_ID_2>`
+`python update_snyk_roles.py --org <YOUR_ORG_ID> --token <YOUR_PAT_TOKEN> --role <CURRENT_ROLE_ID> ---new_role <NEW_ROLE_ID>`
 
 
-* `--users`: A comma-separated list of user IDs (with no spaces) to update.
-
-* `--role`: The public ID of the new role you want to assign.
+* `--role`: The public ID of the role that needs updating.
+* `--new_role`: The public ID of the new role that will be assigned to users.
 
 
 ## License
